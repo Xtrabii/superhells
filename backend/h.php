@@ -13,3 +13,18 @@
   <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
   <script src="index.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <!--start data table-->
+  <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.11/css/jquery.dataTables.min.css">
+  <script type="text/javascript" language="javascript" src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script type="text/javascript" src="//cdn.datatables.net/1.10.11/js/jquery.dataTables.min.js">
+  </script>
+  <script>
+  $(document).ready(function() {
+  $('#example').DataTable( {
+  "aaSorting" :[[0,'desc']],
+  //"lengthMenu":[[20,50, 100, -1], [20,50, 100,"All"]]
+  });
+  } );
+  </script>
+  <!-- end data table -->

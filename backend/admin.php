@@ -23,8 +23,12 @@ error_reporting(0);
           $act = $_GET['act'];
           if($act == 'add'){
           include('admin_form_add.php');
+          
           }elseif ($act == 'edit') {
           include('admin_form_edit.php');
+
+          }elseif ($act == 'rwd') {
+          include('admin_form_rwd.php');
           }
           else {
           include('admin_list.php');
